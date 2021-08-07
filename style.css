@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+ul li{
+    list-style: none;
+}
+a{
+    font-size:1.6rem;
+    text-decoration: none;
+}
+p,li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+}
+h1,h2,h3{
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+    font-weight: 500;
+}
+/* ##### utility classes ######  */
+.lgheading{
+    font-size: 3.5rem;
+}
+.mdheading{
+    font-size:2.5rem ;
+
+}
+.textblue{
+    color:rgb(0, 183, 255);
+}
+.textdark{
+    color:rgb(0, 0, 0);
+}
+.textlight{
+    color:cornsilk;
+}
+.btn{
+    display:inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    margin:0.5em 0;
+    text-transform: uppercase;
+
+}
+.btnprim{
+    background-color: blanchedalmond;
+    border-radius: 100px;
+}
+.btnsec{
+    background-color: burlywood;
+    border-radius: 100px;
+}
+.textbox a{
+    border:2px solid rgb(0, 183, 255);
+}
+.textbox a:hover{
+    background-color: burlywood;
+}
+h1,h3{
+    text-transform: uppercase;
+}
+.bgdark{
+    background: #02182b;
+}
+
+/* /////////// */
+.navbar a:link,
+.navbar a:visited{
+    color:whitesmoke;
+}
+.container{
+    max-width: 1000px;
+    width:90%;
+    margin:0 auto;
+}
+.navbar a{
+    padding-bottom: 0.3rem ;
+}
+.navbar a:hover{
+    border-bottom: 1px solid white;
+}
+.headercontent h1{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.headercontent p{
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.headercontent{
+
+    position:absolute;
+    text-align: center;
+    top:50%;
+    left:50%;
+    transform:translate(-60%, -60%);
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1));
+}
+/* ################### showcase styling ################### */
+.showcase{
+    background-color: gray;
+    padding:10rem 0;
+}
+.row{
+    /* border:2px solid red; */
+    height:400px;
+    background-color: white;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.288);
+}
+.row1{
+     margin-bottom: 10rem
+}
+.row1 .imgbox, .row2 .textbox{
+    float:left;
+    width:50%;
+}
+.row2 .imgbox, .row1 .textbox{
+    float:right;
+    width:50%;
+}
+.row .imgbox{
+    /* border:green 6px solid; */
+    height:100%;
+}
+.row .textbox{
+    /* border:2px solid blue;  */
+    
+    padding: 3rem;
+}
+.row .imgbox img{
+    height:100%;
+    display:inline-block;
+    width:100%;
+    object-fit: cover;
+}
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+
+/* ############# heading styling ################ */
+header{
+    height:98vh;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) ,url("../img/header.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.navbar .logo{
+    float:left;
+    font-size: 3.5rem;
+}
+.navbar .navitems{
+    float:right;
+    margin-top: 1rem;
+}
+.navbar .navitem{
+    display: inline-block;
+    padding:1rem;
+    text-transform: uppercase;
+}
+.navbar::after{
+    content: "";
+    display: block;
+    clear:both;
+}
+/* ################### feature section ############# */
+.features{
+    padding:8rem 0;
+}
+.box{
+    width:33.333%;
+    float:left;
+    padding: 2rem;
+    
+    text-align: center;
+
+}
+.boxwrapper{
+    box-shadow: 5px 5px 10px 0 rgba(0,0,0,0.1);
+    
+}
+.boxwrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.box1, .box3{
+    background-color:#ff5e62 ;
+    
+}
+.box2{
+    background-color:  #02182b;
+    color:white;
+
+}
+/* ########## footer ############### */
+.footer{
+    background:#02182b;
+    color: white;
+    padding: ;
+    text-align: center;
+    
+} 
+.social i{
+    margin: 2rem;
+}
+/* ########### about section ######## */
+.about{
+    padding: 5rem 0;
+}
+.aboutheading{
+    border-bottom: 4px solid #2c3e50;
+    width:100%;
+    
+}
+.about2{
+    float:left;
+    width:50%;
+    padding: 2rem;
+    text-align: center;
+
+}
+.about3{
+   padding: 2rem;
+   width:50%;
+   float: right;
+   text-align: center;
+}
+.about1::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.about li::before {
+    content:"\2713";
+    color:aqua;
+}
+.num1, .num3, .num2 , .num4{
+    width:25%;
+    float:left;
+    text-align: center;
+}
+.num::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/* ############# about ka lower ##############  */
+.lower{
+    background:#02182b ;
+    color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.144);
+}
+.lower1{
+    float: left;
+    width: 60%;
+    text-align: center;
+    padding:2rem;
+}
+.lower2{
+    float: right;
+    width:40%;
+    text-align: right;
+    padding-right: 20rem;
+    margin-top: 0.5rem;
+}
+.lower::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.btn1{
+    border:2px solid white;
+    color: white;
+    letter-spacing: 0.3rem;
+}
+.btn1:hover{
+    background-color:darkslategray;
+} 
+ 
+/* ############## contact page #############  */
+.contact{
+    background: white;
+    padding: 5rem 0;
+}
+.formpart .company i{
+    display: inline-block;
+    margin:1rem;
+}
+.formpart .company h2{
+    text-transform: uppercase;
+    display: inline-block;
+}
+.company{
+    width:49%;
+    float:left;
+
+}
+.form{
+    width: 49%;
+    float: right;
+    padding: 1rem;
+    font-size: 1.6rem;
+}
+.form label{
+    display: block;
+}
+.form input{
+    padding: 0.5rem;
+    width:100%;
+}
+.formh{
+    border-bottom: 5px solid rgb(0, 183, 255);
+
+}
+.formpart::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.form1, .form2 , .form3 ,.form4{
+    margin-bottom: 1.2rem;
+}
+.formpart label::after{
+    content:" *";
+    color: red;
+}
+.textarea{
+    width: 100%;
+    height: 170px;
+    padding:1rem ;
+}
+.sub{
+    display: block;
+    background: rgb(0, 183, 255);
+    color: black;
+    cursor: pointer;
+    padding: 0.5em 3em;
+}
